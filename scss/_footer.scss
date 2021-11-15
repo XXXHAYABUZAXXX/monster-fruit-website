@@ -1,0 +1,23 @@
+.footer__page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #222;
+  color: $text;
+  height: 4rem;
+  text-align: center;
+
+  p {
+    margin-bottom: 0;
+
+    // iphone x
+    @media (max-width: 400px) {
+      font-size: 0.833rem;
+    }
+  }
+
+  &--logo,
+  a {
+    color: $button;
+  }
+}

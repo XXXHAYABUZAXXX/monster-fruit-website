@@ -1,0 +1,51 @@
+.about {
+  display: grid;
+  align-items: center;
+  gap: 2rem 4rem;
+  padding-bottom: 3rem;
+
+  // ipad pro screen
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 400px;
+  }
+
+  article {
+    color: $text;
+  }
+
+  h2 {
+    font-weight: bold;
+    text-transform: none;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+    max-width: 40em;
+  }
+
+  &__btn {
+    color: $buttontext;
+
+    &:hover {
+      background: $hover;
+    }
+  }
+
+  &__img {
+    border-radius: $border-radius;
+    height: 300px;
+
+    // ipad pro screen
+    @media (min-width: 992px) {
+      height: 100%;
+    }
+  }
+}
+
+.featured {
+  &__title {
+    color: $text;
+    text-align: center;
+  }
+}

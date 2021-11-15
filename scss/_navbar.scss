@@ -1,0 +1,124 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // ipad pro screen
+  @media (min-width: 992px) {
+    height: 7rem;
+  }
+
+  .container {
+    // tablet screen
+    @media (min-width: 992px) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__header {
+    height: 7rem;
+
+    // tablet screen
+    @media (min-width: 992px) {
+      height: auto;
+      margin-right: 2rem;
+    }
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+
+    &--logo {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 210px;
+      }
+    }
+
+    &--fruit {
+      color: $button;
+    }
+
+    &--btn {
+      padding: 0.25rem 0.75rem;
+
+      &:hover {
+        background: $hover;
+      }
+
+      // tablet screen
+      @media (min-width: 992px) {
+        display: none;
+      }
+
+      i {
+        color: $buttontext;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    transition: $transition;
+
+    &--link {
+      display: block;
+      text-align: center;
+      text-transform: capitalize;
+      color: $text;
+      letter-spacing: $letter-spacing;
+      padding: 1rem 0;
+      border-top: 1px solid $button;
+      transition: $transition;
+
+      &:hover {
+        color: $button;
+      }
+
+      // tablet screen
+      @media (min-width: 992px) {
+        padding: 0;
+        border-top: 0;
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+.contact-link {
+  // tablet screen
+  @media (min-width: 992px) {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  a {
+    padding: 0.15rem 1rem;
+    color: $buttontext;
+  }
+}
+
+.show-links {
+  height: 310px;
+}
+
+.nav-links {
+  // tablet screen
+  @media (min-width: 992px) {
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+}

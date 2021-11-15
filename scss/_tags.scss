@@ -1,0 +1,41 @@
+.tags__wrapper {
+  display: grid;
+  gap: 2rem;
+  padding-bottom: 3rem;
+
+  // mobile screen
+  @media (min-width: 576px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  // ipad pro screen
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &--link {
+    background: $buttonlink;
+    border-radius: $border-radius;
+    color: $buttontext;
+    text-align: center;
+    padding: 0.75rem 0;
+    transition: $transition;
+
+    &:hover {
+      background: $buttonhover;
+    }
+
+    h5,
+    p {
+      margin-bottom: 0;
+    }
+
+    h5 {
+      font-weight: 600;
+    }
+
+    p {
+      text-transform: none;
+    }
+  }
+}

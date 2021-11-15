@@ -1,0 +1,31 @@
+.hero {
+  background: url("../image/head.jpg") center/cover no-repeat;
+  height: 40vh;
+  border-radius: $border-radius;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  position: relative;
+
+  &__container {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--text {
+      color: $text;
+      text-align: center;
+
+      h1 {
+        // ipad screen
+        @media (min-width: 768px) {
+          font-size: 4rem;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
