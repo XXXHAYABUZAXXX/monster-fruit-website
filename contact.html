@@ -45,32 +45,75 @@
 
     <!-- main -->
     <main class="page">
-      <!-- about.html -->
-      <section class="about">
+      <!-- contact -->
+      <section class="contact__container">
+        <!-- info -->
+        <article class="contact__container--info">
+          <h3>want to get in touch?</h3>
+          <p>
+            Four dollar toast biodiesel plaid salvia actually pickled banjo
+            bespoke mlkshk intelligentsia edison bulb synth.
+          </p>
+          <p>Cardigan prism bicycle rights put a bird on it deep v.</p>
+          <p>
+            Hashtag swag health goth air plant, raclette listicle fingerstache
+            cold-pressed fanny pack bicycle rights cardigan poke.
+          </p>
+        </article>
+        <!-- end of info -->
+
         <!-- article -->
         <article>
-          <h2>I'm baby coloring book poke taxidermy</h2>
-          <p>
-            Taxidermy forage glossier letterpress heirloom before they sold out
-            you probably haven't heard of them banh mi biodiesel chia.
-          </p>
-          <p>
-            Taiyaki tumblr flexitarian jean shorts brunch, aesthetic salvia
-            retro.
-          </p>
-          <a href="contact.html" class="btn about__btn">contact</a>
+          <!-- form -->
+          <form action="#" class="contact__form form">
+            <!-- single form row -->
+            <div class="contact__form--row">
+              <label for="name" class="contact__form--row--label"
+                >your name</label
+              >
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="contact__form--row--input"
+              />
+            </div>
+            <!-- end of single form row -->
+
+            <!-- single form row -->
+            <div class="contact__form--row">
+              <label for="email" class="contact__form--row--label">email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="contact__form--row--input"
+              />
+            </div>
+            <!-- end of single form row -->
+
+            <!-- single form row -->
+            <div class="contact__form--row">
+              <label for="message" class="contact__form--row--label"
+                >message</label
+              >
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                class="contact__form--row--textarea"
+              ></textarea>
+            </div>
+            <!-- end of single form row -->
+
+            <button type="submit" class="btn btn-block">submit</button>
+          </form>
+          <!-- end of form -->
         </article>
         <!-- end of article -->
-
-        <!-- image -->
-        <img
-          src="./image/milktea.jpg"
-          alt="about image"
-          class="img about__img"
-        />
-        <!-- end of image -->
       </section>
-      <!-- end of about -->
+      <!-- end of contact -->
 
       <!-- featured -->
       <section class="featured">
