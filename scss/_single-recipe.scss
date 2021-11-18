@@ -1,0 +1,105 @@
+.recipepage__hero {
+  display: grid;
+  gap: 3rem;
+
+  // ipad pro screen
+  @media (min-width: 992px) {
+    grid-template-columns: 4fr 5fr;
+    align-items: center;
+  }
+
+  &--img {
+    border-radius: $border-radius;
+    height: 300px;
+  }
+
+  &--info {
+    color: $text;
+
+    & > p {
+      margin-bottom: 2rem;
+    }
+
+    &--icons {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin: 2rem 0;
+      text-align: center;
+
+      i {
+        font-size: 1.5rem;
+      }
+
+      h5,
+      p {
+        font-size: 0.85rem;
+        margin-bottom: 0;
+      }
+    }
+
+    &--tags {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      font-weight: 600;
+      font-size: 0.7rem;
+      row-gap: 0.5rem;
+
+      a {
+        background: $button;
+        border-radius: $border-radius;
+        color: $buttontext;
+        padding: 0.05rem 0.5rem;
+        margin: 0 0.25rem;
+        letter-spacing: $letter-spacing;
+      }
+    }
+  }
+}
+
+.recipepage__content {
+  display: grid;
+  gap: 2rem 5rem;
+  padding: 3rem 0;
+  color: $text;
+
+  // ipad pro screen
+  @media (min-width: 992px) {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  &--instruction {
+    p {
+      margin-bottom: 1.5rem;
+    }
+
+    &--single {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1.5rem;
+      align-items: center;
+
+      p {
+        color: $button;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 0;
+      }
+
+      div {
+        height: 1px;
+        background: #9adf01;
+      }
+    }
+  }
+
+  &--ingredients,
+  &--tools {
+    p {
+      border-bottom: 1px solid #9adf01;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+}

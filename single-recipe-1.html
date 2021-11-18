@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monster Fruit</title>
+    <!-- normalize -->
+    <link rel="stylesheet" href="/style/normalize.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="/style/style.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="nav">
+      <div class="container">
+        <div class="nav__header">
+          <a href="index.html" class="nav__header--logo">
+            <img src="/image/monster-fruit.jpg" alt="logo" class="img"
+          /></a>
+
+          <button class="btn nav__header--btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+
+        <div class="nav__list nav-links">
+          <a href="index.html" class="nav__list--link">home</a>
+          <a href="about.html" class="nav__list--link">about</a>
+          <a href="tags.html" class="nav__list--link">tags</a>
+          <a href="recipes.html" class="nav__list--link">recipes</a>
+
+          <div class="nav__list--link contact-link">
+            <a href="contact.html" class="btn btn-contact">contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+
+    <!-- main -->
+    <main class="page">
+      <!-- recipe page -->
+      <div class="recipepage">
+        <!-- recipe hero -->
+        <section class="recipepage__hero">
+          <img
+            src="/image/burger.jpg"
+            alt="burger"
+            class="img recipepage__hero--img"
+          />
+
+          <article class="recipepage__hero--info">
+            <h2>burger</h2>
+            <p>
+              Shabby chic humblebrag banh mi bushwick, banjo kale chips
+              meggings. Cred selfies sartorial, cloud bread disrupt blue bottle
+              seitan. Dreamcatcher tousled bitters, health goth vegan venmo
+              whatever street art lyft shabby chic pitchfork beard. Drinking
+              vinegar poke tbh, iPhone coloring book polaroid truffaut tousled
+              ramps pug trust fund letterpress. Portland four loko austin
+              chicharrones bitters single-origin coffee. Leggings letterpress
+              occupy pour-over.
+            </p>
+
+            <!-- recipe icons -->
+            <div class="recipepage__hero--info--icons">
+              <article>
+                <i class="fas fa-clock"></i>
+                <h5>prep time</h5>
+                <p>30 min.</p>
+              </article>
+
+              <article>
+                <i class="far fa-clock"></i>
+                <h5>prep time</h5>
+                <p>15 min.</p>
+              </article>
+
+              <article>
+                <i class="fas fa-user-friends"></i>
+                <h5>prep time</h5>
+                <p>2 servings</p>
+              </article>
+            </div>
+            <!-- end of recipe icons -->
+
+            <!-- recipe tags -->
+            <div class="recipepage__hero--info--tags">
+              Tags :
+              <a href="single-recipe-1.html">burger</a>
+              <a href="single-recipe-1.html">fried chicken</a>
+              <a href="single-recipe-1.html">fries</a>
+              <a href="single-recipe-1.html">hotdog</a>
+              <a href="single-recipe-1.html">milktea</a>
+            </div>
+            <!-- end of recipe tags -->
+          </article>
+        </section>
+        <!-- end of recipe hero -->
+
+        <!-- recipe content -->
+        <section class="recipepage__content">
+          <!-- first article -->
+          <article>
+            <h4>instructions</h4>
+            <!-- single content -->
+            <div class="recipepage__content--instruction">
+              <div class="recipepage__content--instruction--single">
+                <p>step 1</p>
+                <div></div>
+              </div>
+              <p>
+                I'm baby mustache man braid fingerstache small batch venmo
+                succulents shoreditch.
+              </p>
+            </div>
+            <!-- end of single content -->
+
+            <!-- single content -->
+            <div class="recipepage__content--instruction">
+              <div class="recipepage__content--instruction--single">
+                <p>step 2</p>
+                <div></div>
+              </div>
+              <p>
+                Pabst pitchfork you probably haven't heard of them, asymmetrical
+                seitan tousled succulents wolf banh mi man bun bespoke selfies
+                freegan ethical hexagon.
+              </p>
+            </div>
+            <!-- end of single content -->
+
+            <!-- single content -->
+            <div class="recipepage__content--instruction">
+              <div class="recipepage__content--instruction--single">
+                <p>step 3</p>
+                <div></div>
+              </div>
+              <p>
+                Polaroid iPhone bitters chambray. Cornhole swag kombucha
+                live-edge.
+              </p>
+            </div>
+            <!-- end of single content -->
+          </article>
+          <!-- end of first article -->
+
+          <!-- second article -->
+          <article>
+            <div class="recipepage__content--ingredients">
+              <h4>ingredients</h4>
+              <p>1 1/2 cups dry pancake mix</p>
+              <p>1/2 cup flax seed meal</p>
+              <p>1 cup skim milk</p>
+            </div>
+
+            <div class="recipepage__content--tools">
+              <h4>tools</h4>
+              <p>Hand Blender</p>
+              <p>Large Heavy Pot With Lid</p>
+              <p>Measuring Spoons</p>
+              <p>Measuring Cups</p>
+            </div>
+          </article>
+          <!-- end of second article -->
+        </section>
+        <!-- end of recipe content -->
+      </div>
+      <!-- end of recipe page -->
+    </main>
+    <!-- end of main -->
+
+    <!-- footer -->
+    <footer class="footer__page">
+      <p>
+        &copy;
+        <span id="date"></span>
+        <span class="footer__page--logo">Monster Fruit</span> Built by:
+        <a href="https://fedelmagbanua.netlify.app/">Fedel Developer</a>
+      </p>
+    </footer>
+
+    <!-- javascript -->
+    <script src="/js/app.js"></script>
+  </body>
+</html>
